@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	margin:0;
+    	padding:0;
+	letter-spacing: 1px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+	position:relative;
+	margin:1%;
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+.navbar .lt ul{
+	word-spacing: 5spx;
+	display: flex;
+	list-style-type: none;
+}
+
+.navbar .lt ul li {
+	margin: 10px 15px;
+}
+
+.navbar .lt ul li a{
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	transition: .6s;
+}
+
+.navbar .rt{
+	margin: 10px 15px;
+	font-weight: bolder;
+	border-bottom: 1px solid black;
+	border-bottom-color: orange;
+	border-width:2px; 
+	font-style: oblique;
+}
+
+.navbar .lt ul li a:hover{
+	background-color: orange;
+	border-radius: 10px;
+	color: white;
+	box-shadow: 0 8px 15px rgba(0,0,0,.5); 
+}
+
+.title-card{
+	text-align:center;
+	text-transform: capitalize;
+	margin-top: 1%;
+	font-size: 30px;
+	border:1px solid black;
+	border-radius: 9px;
+	border-color: orange;
+	padding:10px;
+	background-color: orange;
+	color: white; 
+	word-spacing:20px;
+	box-shadow:0 8px 10px rgba(0,0,0,.5);
+}
+.fds{
+	margin:80px 10px 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.m,.n,.d{
+	background-color:orange; 
+	box-shadow: 5px 0px 10px rgba(0,0,0,.5);
+	flex-basis: 20%;
+	margin: 0 100px;
+}
+
+.mrng,.noon,.night{
+	text-transform: uppercase;
+	background-color: white;
+	padding:10px 5px;
+	font-size: 25px;
+	text-align :center;
+	font-weight: bold;
+}	
+
+.m-cnt ul,.l-cnt ul,.d-cnt ul{
+	font-size:120%;
+	text-align :center;
+	padding:15px 5px;
+	color:white;
+	list-style-type: none;
+	text-align:center;
+}
+
+.m-cnt ul li,.l-cnt ul li,.d-cnt ul li{
+	line-height: 35px;
+	font-size: 19px;
+}
+
+.img{
+	margin: 70px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.img img{
+	width: 550px;
+	border-radius:50%;
+}
+
+@media(max-width: 1167px){
+	.fds{
+		flex-wrap: wrap;
+	}
+
+	.m,.n,.d{
+		flex-basis: 30%;
+		margin: 0 80px 50px;
+	}
+}
+
+@media(max-width: 840px){
+	.m,.n,.d{
+		flex-basis: 100%;
+	}
+}
+
+@media(max-width: 600px){
+	.title-card {
+		font-size: 25px;
+	}
+}
+
+@media(max-width: 570px){
+	.img img{
+		width: 350px;
+	}
+}
